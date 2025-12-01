@@ -1,4 +1,3 @@
-# parser_pandas.py
 import pandas as pd
 import os
 from selenium import webdriver
@@ -34,7 +33,7 @@ def log(msg):
 
 def parse_plan(login: str, password: str, semester: int):
     """Парсинг учебного плана, сохранение и загрузка из data.json с pandas"""
-    json_file = "data.json"
+    json_file = "data/data.json"
     df = pd.DataFrame()
 
     # Загружаем JSON в DataFrame

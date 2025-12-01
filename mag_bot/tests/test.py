@@ -37,7 +37,7 @@ class TestParser(unittest.TestCase):
         # Вызываем parse_plan
         data = parser.parse_plan("testlogin", "testpass", 1)
 
-        # Проверяем, что возвращается список с словарем и правильными ключами
+        # Проверяем, что возвращается список со словарем и правильными ключами
         self.assertIsInstance(data, list)
         self.assertGreaterEqual(len(data), 1)
         self.assertIn("name", data[0])

@@ -8,7 +8,7 @@ import parser
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import interp1d
-from config import TELEGRAM_TOKEN
+from mag_bot.util.config import TELEGRAM_TOKEN
 
 LOGIN, PASSWORD, SEMESTER = range(3)
 
